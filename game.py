@@ -10,9 +10,9 @@
 
 print("Rock, Paper, Scissors, Shoot!")
 
-n = input("What is your name?")
+n = input("What is your name? ")
 
-print("Welcome to the game,"n)
+print("Welcome to the game,",n)
 
 u = input("Please choose one of 'rock', 'paper', 'scissors': ")
 
@@ -33,6 +33,7 @@ elif u in s:
     print("USER CHOSE: scissors")
 else:
     print("Invalid selection. Please try again!")
+    quit()
 
 # VALIDATE THE USER CHOICE
 
@@ -56,21 +57,21 @@ print("COMPUTER CHOSE:", c)
 
 if u == c:
     print("It's a draw! You both chose",u)
-elif u == r:
-    if c == p:
+elif u in r:
+    if c in p:
         print("Sorry! Paper covers rock. You lose.")
     else:
         print("Congrats! Rock crushes scissors. You won!")
-elif u == p:
-    if c == r:
+elif u in p:
+    if c in r:
         print("Congrats! Paper covers rock. You won!")
     else:
-        print("Sorry! Scissors cut paper. You lose.")
-elif u == s:
-    if c == r:
+        print("Sorry! Scissors cuts paper. You lose.")
+elif u in s:
+    if c in r:
         print("Sorry! Rock crushes scissors. You lose.")
     else:
-        print("Congrats! Scissors cut paper. You won!")
+        print("Congrats! Scissors cuts paper. You won!")
 
 print("Thank you for playing! Please play again!")
 
