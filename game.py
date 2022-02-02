@@ -16,7 +16,17 @@ print("USER CHOSE:", u)
 
 # VALIDATE THE USER CHOICE
 
+valid_input = ["ROCK","PAPER","SCISSORS","rock","paper","scissors","Rock","Paper","Scissors"]
 
+if u in valid_input:
+    
+    print("Choice received!")
+
+#Failing gracefully:
+
+else: 
+    print("Invalid selection. Please play again!") 
+    quit()
 
 
 # COMPUTER CHOICE
