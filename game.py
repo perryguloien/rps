@@ -31,7 +31,11 @@ else:
 
 # COMPUTER CHOICE
 
+computer_choices = ["rock","paper","scissors"]
 
+import random
+c = random.choice(computer_choices)
+print("COMPUTER CHOSE:", c)
 
 
 # DETERMINE THE WINNER
