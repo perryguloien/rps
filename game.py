@@ -12,21 +12,33 @@ print("Rock, Paper, Scissors, Shoot!")
 
 u = input("Please choose one of 'rock', 'paper', 'scissors': ")
 
-print("USER CHOSE:", u)
+r = ["ROCK","rock","Rock"]
+p = ["PAPER","paper","Paper"]
+s = ["SCISSORS","scissors","Scissors"]
+
+#could have also put print("USER CHOSE:" u) but wanted to unify case
+
+if u in r:
+    u = "ROCK"
+    print("USER CHOSE: ROCK")
+elif u in p:
+    u = "PAPER"
+    print("USER CHOSE: PAPER")
+elif u in s:
+    u = "SCISSORS"
+    print("USER CHOSE: SCISSORS")
+else:
+    print("Invalid selection. Please try again!")
 
 # VALIDATE THE USER CHOICE
 
-valid_input = ["ROCK","PAPER","SCISSORS","rock","paper","scissors","Rock","Paper","Scissors"]
+valid_input = ["ROCK","PAPER","SCISSORS"]
 
-if u in valid_input:
-    
-    print("Choice received!")
+#by fixing the case above, I integrated the data validation
+
 
 #Failing gracefully:
 
-else: 
-    print("Invalid selection. Please play again!") 
-    quit()
 
 
 # COMPUTER CHOICE
