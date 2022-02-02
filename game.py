@@ -10,7 +10,7 @@
 
 print("Rock, Paper, Scissors, Shoot!")
 
-u = input("Please choose one of: 'rock', 'paper', 'scissors': ")
+u = input("Please choose one of 'rock', 'paper', 'scissors': ")
 
 print("USER CHOSE:", u)
 
