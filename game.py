@@ -19,26 +19,25 @@ s = ["SCISSORS","scissors","Scissors"]
 #could have also put print("USER CHOSE:" u) but wanted to unify case
 
 if u in r:
-    u = "ROCK"
-    print("USER CHOSE: ROCK")
+    u = "rock"
+    print("USER CHOSE: rock")
 elif u in p:
-    u = "PAPER"
-    print("USER CHOSE: PAPER")
+    u = "paper"
+    print("USER CHOSE: paper")
 elif u in s:
-    u = "SCISSORS"
-    print("USER CHOSE: SCISSORS")
+    u = "scissors"
+    print("USER CHOSE: scissors")
 else:
     print("Invalid selection. Please try again!")
 
 # VALIDATE THE USER CHOICE
 
-valid_input = ["ROCK","PAPER","SCISSORS"]
+valid_input = ["rock","paper","scissors"]
 
 #by fixing the case above, I integrated the data validation
 
 
-#Failing gracefully:
-
+#Failing gracefully is integrated with the data validation
 
 
 # COMPUTER CHOICE
@@ -49,9 +48,10 @@ import random
 c = random.choice(computer_choices)
 print("COMPUTER CHOSE:", c)
 
-
 # DETERMINE THE WINNER
 
+if u == c:
+    print("You both chose",u,"It's a draw!")
 
 
 
