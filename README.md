@@ -24,10 +24,14 @@ pip install -r requirements.txt
 
 ## Usage
 
+If user wants to add their name, go the .env file and type their name into the secret variable. 
+
 Run the rock paper scissors game:
 
 ```sh
 python game.py
+
+PLAYER_NAME="Jon Snow" python game.py
 ```
 
 ## Testing
